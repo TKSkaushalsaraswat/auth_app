@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TRAVLER</string>
+    <string name="facebook_app_id">2817007535246493</string>
+    <string name="fb_login_protocol_scheme">fb2817007535246493</string>
+</resources>

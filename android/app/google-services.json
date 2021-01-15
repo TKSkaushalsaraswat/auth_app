@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "19218442113",
+    "firebase_url": "https://connexion-2ca61.firebaseio.com",
+    "project_id": "connexion-2ca61",
+    "storage_bucket": "connexion-2ca61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19218442113:android:526aa6dddedeb84dfeaa80",
+        "android_client_info": {
+          "package_name": "com.connexion.auth_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19218442113-kgksdajb6jidso7r4u4en13f7g3dg1e0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6ACOwKPJVCT9k4tlpiaaAl5D_mBIl2VM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19218442113-kgksdajb6jidso7r4u4en13f7g3dg1e0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
