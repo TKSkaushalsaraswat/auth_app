@@ -10,7 +10,6 @@ class MenuFrame extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Material(
       child: Container(
         child: SafeArea(
@@ -99,5 +98,6 @@ class MenuFrame extends StatelessWidget {
         ),
       ),
     );
+  
   }
 }

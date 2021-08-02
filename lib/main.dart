@@ -1,4 +1,4 @@
-import 'package:auth_app/menu_frame.dart';
+import 'package:auth_app/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
             primaryColor: Colors.white,
             visualDensity: VisualDensity.adaptivePlatformDensity),
-            home: MenuFrame()
+            home: Waiting()
         );
   }
 }
