@@ -1,3 +1,4 @@
+import 'package:auth_app/home.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -30,9 +31,7 @@ class _CreateLoginState extends State<CreateLogin> {
         .createUserWithEmailAndPassword(email: email, password: pwd)
         .then((authResult) =>
             Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-              return Scaffold(
-                body: SafeArea(child: Text('Hello ${authResult.user.email}')),
-              );
+              return MaterialApp(home: Home());
             })))
         .catchError((err) => {
               print(err.code),
