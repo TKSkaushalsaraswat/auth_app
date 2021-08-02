@@ -96,7 +96,7 @@ class HomeSignIn extends StatelessWidget {
                   size: 30,
                 ),
                 Text(
-                  ' | Sign in with Google',
+                  ' | Log in with Google',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -127,7 +127,7 @@ class HomeSignIn extends StatelessWidget {
                   size: 30,
                 ),
                 Text(
-                  ' | Sign in with Facebook',
+                  ' | Log in with Facebook',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -170,7 +170,7 @@ class HomeSignIn extends StatelessWidget {
             goToSignIn();
           },
           child: Text(
-            'ALEREADY REGISTER SIGN IN',
+            'ALEREADY REGISTER LOG IN',
             style: TextStyle(
               color: Colors.white,
               fontSize: 15,

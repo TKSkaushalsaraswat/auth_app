@@ -1,8 +1,8 @@
+import 'package:auth_app/home.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
-
 
 class SignIn extends StatefulWidget {
   @override
@@ -22,16 +22,14 @@ class SignInState extends State<SignIn> {
             context,
             MaterialPageRoute(
               builder: (context) {
-                return Scaffold(
-                  body: SafeArea(child: Text('Hello ${authResult.user.email}')),
-                );
+                return MaterialApp(home: Home());
               },
             ),
           ),
         )
         .catchError((err) => {
-          print(err.code),
-          if (err.code == 'wrong-password')
+              print(err.code),
+              if (err.code == 'wrong-password')
                 {
                   showCupertinoDialog(
                       context: context,
@@ -51,7 +49,7 @@ class SignInState extends State<SignIn> {
                         );
                       })
                 },
-                 if (err.code == 'user-not-found')
+              if (err.code == 'user-not-found')
                 {
                   showCupertinoDialog(
                       context: context,
@@ -71,7 +69,7 @@ class SignInState extends State<SignIn> {
                         );
                       })
                 }
-        });
+            });
   }
 
   @override
@@ -80,7 +78,7 @@ class SignInState extends State<SignIn> {
       child: Column(
         children: [
           Text(
-            'SIGN IN',
+            'LOG IN',
             style: TextStyle(
                 color: Colors.white,
                 fontSize: 26.0,

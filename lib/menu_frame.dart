@@ -2,7 +2,6 @@ import 'package:auth_app/create_login.dart';
 import 'package:auth_app/home_signin_widget.dart';
 import 'package:auth_app/signin.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 
 class MenuFrame extends StatelessWidget {
@@ -17,10 +16,9 @@ class MenuFrame extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 50),
             child: Column(
               children: <Widget>[
-                Icon(
-                  FontAwesomeIcons.tripadvisor,
-                  size: 60,
-                  color: Color.fromRGBO(245, 48, 111, 1.0),
+                Image(
+                 image: AssetImage("assets/images/onlylogo.png"),
+                 width: 120,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -42,15 +40,15 @@ class MenuFrame extends StatelessWidget {
                   ],
                 ),
                 Text(
-                  'The world is a book & those who do not travel read only a page.',
+                  'Travel the Untravelled.',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 18.0,
+                    fontSize: 20.0,
                   ),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(
-                  height: 60.0,
+                  height: 50.0,
                 ),
                 Expanded(
                     child: PageView(
